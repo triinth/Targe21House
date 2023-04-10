@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 using targe21house.Core.Domain;
 
 namespace targe21house.Data

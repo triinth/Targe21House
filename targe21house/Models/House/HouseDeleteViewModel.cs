@@ -1,7 +1,6 @@
-﻿
-namespace targe21house.Core.Dto
+﻿namespace targe21house.Models.House
 {
-    public class HouseDto
+    public class HouseDeleteViewModel
     {
         public Guid? Id { get; set; }
         public string Address { get; set; }
@@ -12,6 +11,7 @@ namespace targe21house.Core.Dto
         public string Country { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime ModifiedAt { get; set; }
+
 
     }
 }

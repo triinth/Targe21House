@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "targe21house.Data", "..\tar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "targe21house.Core", "..\targe21house.Core\targe21house.Core.csproj", "{FF2951CA-6441-49B9-A7A6-28BF6DA6EF80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "targe21house.ApplicationServices", "..\targe21house.ApplicationServices\targe21house.ApplicationServices.csproj", "{AA68296F-41B5-43ED-A248-3BB66C06033D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FF2951CA-6441-49B9-A7A6-28BF6DA6EF80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF2951CA-6441-49B9-A7A6-28BF6DA6EF80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF2951CA-6441-49B9-A7A6-28BF6DA6EF80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA68296F-41B5-43ED-A248-3BB66C06033D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA68296F-41B5-43ED-A248-3BB66C06033D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA68296F-41B5-43ED-A248-3BB66C06033D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA68296F-41B5-43ED-A248-3BB66C06033D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

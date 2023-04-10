@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using targe21house.ApplicationServices.Services;
+using targe21house.Core.ServiceInterface;
 using targe21house.Data;
 
 namespace targe21house
@@ -12,6 +14,7 @@ namespace targe21house
             // Add services to the container.
             builder.Services.AddDbContext<targe21houseContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<IHousesServices,HousesServices>();
 
             var app = builder.Build();
 

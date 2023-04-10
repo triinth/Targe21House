@@ -1,8 +1,8 @@
-﻿
-namespace targe21house.Core.Dto
+﻿namespace targe21house.Models.House
 {
-    public class HouseDto
+    public class HouseCreateUpdateViewModel
     {
+
         public Guid? Id { get; set; }
         public string Address { get; set; }
         public string RoomCount { get; set; }
@@ -12,6 +12,7 @@ namespace targe21house.Core.Dto
         public string Country { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime ModifiedAt { get; set; }
+
 
     }
 }

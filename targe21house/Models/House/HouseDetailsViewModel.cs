@@ -1,7 +1,6 @@
-﻿
-namespace targe21house.Core.Dto
+﻿namespace targe21house.Models.House
 {
-    public class HouseDto
+    public class HouseDetailsViewModel
     {
         public Guid? Id { get; set; }
         public string Address { get; set; }
