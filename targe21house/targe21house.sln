@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "targe21house.Core", "..\tar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "targe21house.ApplicationServices", "..\targe21house.ApplicationServices\targe21house.ApplicationServices.csproj", "{AA68296F-41B5-43ED-A248-3BB66C06033D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "targe21house.testHouse", "..\targe21house.testHouse\targe21house.testHouse.csproj", "{DBDABC2B-8D9A-478D-915E-27CA21E1B9D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AA68296F-41B5-43ED-A248-3BB66C06033D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA68296F-41B5-43ED-A248-3BB66C06033D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA68296F-41B5-43ED-A248-3BB66C06033D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBDABC2B-8D9A-478D-915E-27CA21E1B9D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBDABC2B-8D9A-478D-915E-27CA21E1B9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBDABC2B-8D9A-478D-915E-27CA21E1B9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBDABC2B-8D9A-478D-915E-27CA21E1B9D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

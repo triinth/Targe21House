@@ -42,43 +42,42 @@ namespace targe21house.ApplicationServices.Services
 
         public async Task<House> Update(HouseDto dto)
         {
-            var domain = await _context.Houses.FindAsync(dto.Id);
-            {
+            House house = new();
 
-                domain.Address = dto.Address;
-                domain.RoomCount = dto.RoomCount;
-                domain.Size = dto.Size;
-                domain.Price = dto.Price;
-                domain.BuiltDate = dto.BuiltDate;
-                domain.Country = dto.Country;
-                domain.CreatedAt = DateTime.Now;
+            house.Address = dto.Address;
+            house.RoomCount = dto.RoomCount;
+            house.Size = dto.Size;
+            house.Price = dto.Price;
+            house.BuiltDate = dto.BuiltDate;
+            house.Country = dto.Country;
+            house.CreatedAt = dto.CreatedAt;
+            house.ModifiedAt = DateTime.Now;
 
-                _context.Houses.Update(domain);
-                await _context.SaveChangesAsync();
+            _context.Houses.Update(house);
+            await _context.SaveChangesAsync();
 
-                return domain;
-            }
-
+            return house;
         }
 
-    public async Task<House> Delete(Guid? id)
-    {
-        var houseId = await _context.Houses
-            .FirstOrDefaultAsync(x => x.Id == id);
+
+        public async Task<House> Delete(Guid? id)
+        {
+            var houseId = await _context.Houses
+                .FirstOrDefaultAsync(x => x.Id == id);
 
 
-        _context.Houses.Remove(houseId);
-        await _context.SaveChangesAsync();
+            _context.Houses.Remove(houseId);
+            await _context.SaveChangesAsync();
 
-        return houseId;
+            return houseId;
+        }
+
+        public async Task<House> GetAsync(Guid? id)
+        {
+            var result = await _context.Houses
+                .FirstOrDefaultAsync(x => x.Id == id);
+
+            return result;
+        }
     }
-
-    public async Task<House> GetAsync(Guid? id)
-    {
-        var result = await _context.Houses
-            .FirstOrDefaultAsync(x => x.Id == id);
-
-        return result;
-    }
-}
 }

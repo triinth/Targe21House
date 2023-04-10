@@ -5,7 +5,7 @@ namespace targe21house.Core.Dto
     {
         public Guid? Id { get; set; }
         public string Address { get; set; }
-        public string RoomCount { get; set; }
+        public int RoomCount { get; set; }
         public int Size { get; set; }
         public int Price { get; set; }
         public DateTime BuiltDate { get; set; }
