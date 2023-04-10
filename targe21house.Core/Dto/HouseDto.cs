@@ -1,10 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace targe21house.Core.Domain
+﻿
+namespace targe21house.Core.Dto
 {
     public class House
     {
-        [Key]
         public Guid? Id { get; set; }
         public string Address { get; set; }
         public string RoomCount { get; set; }

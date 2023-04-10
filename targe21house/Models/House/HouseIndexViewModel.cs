@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace targe21house.Models.House
+﻿namespace targe21house.Models.House
 {
     public class HouseIndexViewModel
     {
